@@ -1,0 +1,157 @@
+*{
+   box-sizing: border-box; 
+}
+body{
+    margin: 0;
+}
+/* style pada header */
+.header{
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+
+/*style pada topnav */
+
+.topnav{
+    overflow: hidden;
+    background-color: lightpink;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: papayawhip;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: cornsilk;
+    color: lightblue;
+}
+
+.footer{
+    background-color: beige;
+    padding: 15px;
+    
+}
+
+table, th, td{ 
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: lightcoral;
+}
+th, td{
+    padding: 5px;
+}
+tr{ 
+    background-color: lavenderblush;
+}
+tr:nth-child(even){
+    background-color: cornsilk;
+}
+tr:hover{
+    background-color:palevioletred;
+}
+
+/*style pada list */
+ol{
+    list-style-type: lower-alpha;
+}
+ul{ 
+    list-style: square;
+}
+
+ol{ 
+background-color: bisque;
+border: 3px solid; 
+padding: 6px 12px;
+margin: 10px;
+list-style-position: inside;
+}
+
+ol li{
+    background-color: palevioletred;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid;
+    text-align: justify;
+}
+
+ul{ 
+background-color: papayawhip;
+border: 3px solid; 
+padding: 6px 12px;
+margin: 10px;
+list-style-position: inside;
+}
+
+ul li{
+    background-color: palevioletred;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid;
+    text-align: justify;
+}
+
+
+ol li.stoberi{
+    background-color: lightcyan;
+    border: 2px solid;
+    color: white;
+    font-weight: bold;
+}
+
+/* LIST LOREM IPSUM */
+.lorem-list {
+    list-style-type: square;
+    background-color: lightgoldenrodyellow;
+    margin: 10px 0;
+    padding: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.lorem-list li {
+    background-color: lightpink;
+    color: lightsalmon;
+    padding: 6px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* LIST MACAM-MACAM ICON */
+.icon-list {
+    list-style-type: square;
+    background-color: lightgoldenrodyellow;
+    margin: 10px 0;
+    padding: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.icon-list li {
+    background-color: palevioletred;
+    color: lightcoral;
+    padding: 10px;
+    margin: 4px 0;
+    border: 2px solid lightcyan;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 8px;
+}

@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "Fredoka";
+    src: url("fredoka-font-preview-kit/Fredoka.woff2") format("woff2");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("lakebg.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 25px;
+    font-family: "Fredoka", Arial, sans-serif;
+}
+
+/* MAIN BOX */
+
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255, 250, 232, 0.95); /* Lemonchiffon tint */
+    padding: 25px;
+    border: 4px solid skyblue;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(135, 206, 235, 0.35);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.container:hover {
+    border-color: lightpink;
+    box-shadow: 0 15px 40px rgba(255, 182, 193, 0.5);
+}
+
+/* MAIN TITLE */
+
+h1 {
+    text-align: center;
+    color: skyblue;
+    font-family: "Singsong", Georgia, serif;
+    font-size: 40px;
+    padding: 15px;
+    cursor: pointer;
+    transition:
+        color 0.4s ease,
+        transform 0.4s ease,
+        letter-spacing 0.4s ease,
+        text-shadow 0.4s ease;
+}
+
+h1:hover {
+    color: lightpink;
+    transform: scale(1.08) rotate(-1deg);
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 0px lemonchiffon;
+}
+
+/* NAME */
+
+h2 {
+    text-align: center;
+    color: lightpink;
+    font-family: "Singsong", Georgia, serif;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+    color: skyblue;
+    transform: translateY(-5px);
+}
+
+/* SECTION TITLES */
+
+h3 {
+    text-align: center;
+    color: #4a7c59;
+    background-color: lavenderblush;
+    padding: 12px;
+    border-top: 3px solid lemonchiffon;
+    border-bottom: 3px solid lightpink;
+    border-radius: 15px;
+    font-family: Georgia, serif;
+    transition:
+        background-color 0.4s ease,
+        transform 0.4s ease,
+        letter-spacing 0.4s ease,
+        box-shadow 0.4s ease,
+        color 0.4s ease;
+}
+
+h3:hover {
+    background-color: lemonchiffon;
+    color: skyblue;
+    transform: translateY(-4px);
+    letter-spacing: 2px;
+    box-shadow: 0 6px 15px rgba(144, 238, 144, 0.4);
+}
+
+/* PARAGRAPHS */
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.7;
+    color: #555555;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    color: skyblue;
+}
+
+/* FIRST IMAGE AREA */
+
+.gambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.gambar img {
+    width: 40%;
+    height: 230px;
+    object-fit: cover;
+    border: 5px solid lemonchiffon;
+    border-radius: 35px;
+    box-shadow: 0 7px 15px rgba(135, 206, 235, 0.4);
+    cursor: pointer;
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease,
+        border-radius 0.5s ease,
+        filter 0.5s ease,
+        border-color 0.5s ease;
+}
+
+.gambar img:hover {
+    border-color: lightpink;
+    transform: scale(1.08) translateY(-10px) rotate(1deg);
+    box-shadow:
+        0 15px 30px rgba(144, 238, 144, 0.5),
+        0 0 0 5px rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    filter: brightness(1.08) saturate(1.15);
+}
+
+.gambar img:first-child:hover {
+    transform: scale(1.08) translateY(-10px) rotate(-2deg);
+}
+
+.gambar img:last-child:hover {
+    transform: scale(1.08) translateY(-10px) rotate(2deg);
+}
+
+/* POLLUTION CARDS */
+
+.jenis-pencemaran,
+.gambar-dampak,
+.gambar-cara {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.kartu {
+    width: 220px;
+    background-color: lavenderblush;
+    border: 3px solid skyblue;
+    border-radius: 22px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(144, 238, 144, 0.3);
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        background-color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.kartu:hover {
+    transform: translateY(-10px) scale(1.04);
+    background-color: lemonchiffon;
+    border-color: lightpink;
+    box-shadow:
+        0 15px 25px rgba(135, 206, 235, 0.4),
+        0 0 0 4px rgba(255, 255, 255, 0.8);
+}
+
+.kartu img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+.kartu:hover img {
+    transform: scale(1.06);
+    filter: brightness(1.08) saturate(1.1);
+}
+
+.kartu h4 {
+    color: #4a7c59; /* Green tone */
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin: 12px 5px 8px;
+    transition: color 0.3s ease;
+}
+
+.kartu:hover h4 {
+    color: skyblue;
+}
+
+.kartu p {
+    text-indent: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 5px;
+    color: #444444;
+}
+
+/* COLOR ROTATION EFFECT FOR CARDS (NTH-CHILD) */
+
+.kartu:nth-child(5n+1) { border-color: lemonchiffon; }
+.kartu:nth-child(5n+2) { border-color: lightpink; }
+.kartu:nth-child(5n+3) { border-color: skyblue; }
+.kartu:nth-child(5n+4) { border-color: lavenderblush; }
+.kartu:nth-child(5n+5) { border-color: lightgreen; }
+
+.kartu:nth-child(5n+1):hover { background-color: lavenderblush; }
+.kartu:nth-child(5n+2):hover { background-color: lemonchiffon; }
+.kartu:nth-child(5n+3):hover { background-image: url(lakebg.jpg.jpg); }
+.kartu:nth-child(5n+4):hover { background-color: lightpink; }
+.kartu:nth-child(5n+5):hover { background-color: skyblue; }
+
+.kartu:nth-child(odd):hover {
+    transform: translateY(-10px) rotate(-1deg) scale(1.04);
+}
+
+.kartu:nth-child(even):hover {
+    transform: translateY(-10px) rotate(1deg) scale(1.04);
+}
+
+.polarbear, .snowflake, .grizzlybear, .fish {
+    position: fixed;
+    font-size: 30px;
+    user-select: none;
+    pointer-events: none;
+    z-index: 99;
+}
+
+/* Polar bear berenang dari kiri ke kanan lalu kembali */
+.polarbear {
+    top: 18%;
+    animation: swim1 14s infinite linear;
+}
+
+/* Grizzly bear berenang dari kanan ke kiri lalu kembali */
+.grizzlybear {
+    top: 8%;
+    animation: swim2 14s infinite linear;
+}
+
+/* Snowflake melayang ke atas di sisi kiri */
+.snowflake {
+    bottom: -10%;
+    left: 8%;
+    animation: floatUp 9s infinite ease-in 3.5s;
+}
+
+/* Fish melayang ke atas di sisi kanan agar tidak menumpuk dengan snowflake */
+.fish {
+    bottom: -10%;
+    left: 80%; /* Diubah dari 8% ke 80% agar menyebar */
+    animation: floatUp 7s infinite ease-in;
+}
+
+@keyframes swim1 {
+    0% { left: -10%; transform: scaleX(1); }
+    50% { left: 105%; transform: scaleX(1); }
+    51% { transform: scaleX(-1); }
+    100% { left: -10%; transform: scaleX(-1); }
+}
+
+@keyframes swim2 {
+    0% { right: -10%; transform: scaleX(-1); }
+    50% { right: 105%; transform: scaleX(-1); }
+    51% { transform: scaleX(1); }
+    100% { right: -10%; transform: scaleX(1); }
+}
+
+@keyframes floatUp {
+    0% { bottom: -5%; opacity: 0; transform: scale(0.8); }
+    50% { opacity: 0.8; }
+    100% { bottom: 105%; opacity: 0; transform: scale(1.2); }
+}

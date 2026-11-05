@@ -1,0 +1,248 @@
+dfbody{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: "mint";
+}
+h2{
+    background-color: paleturquoise;
+    color: rgb(91, 219, 241);
+    text-align: center;
+    font-family: "mint";
+}  
+/* format font : .otf/.ttf */
+@font-face {
+    font-family: "mint";
+    src: url("matcha_mint/Matcha\ Mint.otf");
+}
+h1{
+    background-color: pink;
+    color: palevioletred;
+    text-align: center;
+    width: 600px;
+}
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: powderblue;
+    color: azure;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid peachpuff;
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+div.Makanan{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.sushi{
+        width: 220px;
+        height: 260px;
+        border-radius: 15px;
+        background-color: papayawhip;
+        color: darksalmon;
+        box-shadow: 0 4px 8px 0;
+        box-shadow: black;
+}
+
+div.sushi:hover{
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+}
+
+div.subway{
+        width: 220px;
+        height: 260px;
+        border-radius: 15px;
+        background-color: papayawhip;
+        color: darksalmon;
+        box-shadow: 0 4px 8px 0;
+        box-shadow: black;
+}
+
+div.subway:hover{
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+}
+
+div.pokebowl{
+        width: 220px;
+        height: 260px;
+        border-radius: 15px;
+        background-color: papayawhip;
+        color: darksalmon;
+        box-shadow: 0 4px 8px 0;
+        box-shadow: black;
+}
+
+div.pokebowl:hover{
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+}
+
+div.Minuman{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.sprite{
+        width: 220px;
+        height: 260px;
+        border-radius: 15px;
+        background-color: papayawhip;
+        color: darksalmon;
+        box-shadow: 0 4px 8px 0;
+        box-shadow: black;
+}
+
+div.sprite:hover{
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+}
+
+div.smoothie{
+        width: 220px;
+        height: 260px;
+        border-radius: 15px;
+        background-color: papayawhip;
+        color: darksalmon;
+        box-shadow: 0 4px 8px 0;
+        box-shadow: black;
+}
+
+div.smoothie:hover{
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+}
+
+div.matcha{
+        width: 220px;
+        height: 260px;
+        border-radius: 15px;
+        background-color: papayawhip;
+        color: darksalmon;
+        box-shadow: 0 4px 8px 0;
+        box-shadow: black;
+}
+
+div.matcha:hover{
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+}
+
+div.Series{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.tvd{
+        width: 220px;
+        height: 260px;
+        border-radius: 15px;
+        background-color: papayawhip;
+        color: darksalmon;
+        box-shadow: 0 4px 8px 0;
+        box-shadow: black;
+}
+
+div.tvd:hover{
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+}
+
+div.atla{
+        width: 220px;
+        height: 260px;
+        border-radius: 15px;
+        background-color: papayawhip;
+        color: darksalmon;
+        box-shadow: 0 4px 8px 0;
+        box-shadow: black;
+}
+
+div.atla:hover{
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+}
+
+div.gossipgirl{
+        width: 220px;
+        height: 260px;
+        border-radius: 15px;
+        background-color: papayawhip;
+        color: darksalmon;
+        box-shadow: 0 4px 8px 0;
+        box-shadow: black;
+}
+
+div.gossipgirl:hover{
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        transform: scale(1.1);
+}
+
